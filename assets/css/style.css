@@ -1,0 +1,474 @@
+/*--------------------------------------------------------------
+  #   Start
+--------------------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+/*--------------------------------------------------------------
+  # Landing Page Start
+--------------------------------------------------------------*/
+.landing-page {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.landing-page .row {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  padding: 0 60px;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.landing-page-p {
+  line-height: 25px;
+  font-size: 17px;
+}
+
+.landing-page .row h2,
+.landing-page .row p {
+  color: #502d2d;
+}
+
+.landing-page .row h2 {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.landing-page .column {
+  width: 50%;
+}
+
+.photo {
+  width: 100%;
+  z-index: 10;
+  position: relative;
+}
+
+@media (width < 860px) {
+  .landing-page {
+    padding-top: 130px;
+  }
+
+  .landing-page .row {
+    flex-direction: column;
+    padding: 0 20px;
+    justify-content: center;
+  }
+
+  .landing-page .row .column {
+    width: 100%;
+  }
+}
+
+@media (width < 600px) {
+  .landing-page {
+    padding-top: 20px;
+  }
+  .landing-page .row h2 {
+    font-size: 26px;
+  }
+
+}
+
+/*--------------------------------------------------------------
+  # About Philippines 2nd Page
+--------------------------------------------------------------*/
+
+.about-ph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: #fdfcfc;
+}
+
+.content-about-ph {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.text {
+  flex: 1 1 300px;
+  margin: 10px;
+  text-align: left;
+  line-height: 30px;
+}
+
+.title {
+  line-height: 60px;
+  font-size: 30px;
+  position: relative;
+  bottom: 10px;
+}
+
+.image {
+  flex: 1 1 300px;
+  margin: 10px;
+  text-align: center;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/*--------------------------------------------------------------
+  # Step by Step Process 3rd page
+--------------------------------------------------------------*/
+
+.process-bitten-by-snake {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container3 {
+  padding: 0 20px;
+}
+.container3 > h2 {
+  padding: 18px;
+  margin-left: 27px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-weight: 500;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.text3 {
+  font-size: 16px;
+}
+
+/*--------------------------------------------------------------
+  # View all Snakes 4rth Page
+--------------------------------------------------------------*/
+
+.view-snake-section {
+  min-height: 100vh;
+  background: #fffdfddb;
+}
+
+.view-snake-section .discover{
+  text-align: center;
+  position: relative;
+  top: 80px;
+}
+
+.snake-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  max-width: 1250px;
+  margin: 150px auto;
+  padding: 20px;
+  gap: 20px;
+  /* border: 1px solid gray; */
+}
+
+.snake-list .snake-box {
+  background: rgb(236, 234, 234);
+  padding: 26px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.04);
+  list-style: none;
+  text-decoration: none;
+  border: 2px solid transparent;
+  transition: border 0.5s ease;
+}
+
+.snake-list .snake-box:hover {
+  border: 12px solid rgb(255, 0, 0);
+}
+
+.snake-list .snake-box img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.snake-list span {
+  display: inline-block;
+  background: #F7DFF5;
+  margin-top: 32px;
+  padding: 8px 15px;
+  font-size: 0.75rem;
+  border-radius: 50px;
+  font-weight: 600;
+  width: 100px;
+}
+
+.snake-list span:hover {
+  border: 1px solid #585656;
+  background-color: rgb(245, 235, 223);
+}
+
+.snake-list .view-all-snakes {
+  background-color: rgb(255, 255, 255); 
+  color: rgb(250, 127, 127);
+  display: flex;
+  justify-content: center;
+  /* letter-spacing: 1px; */
+}
+
+.snake-box .snake-category {
+  color: #000;
+  font-size: 1.438rem;
+  margin-top: 28px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.snake-box .defi {
+  padding-top: 17px;
+  line-height: 22px;
+}
+
+.snake-box .snake-view{
+  text-decoration: none;
+}
+
+@media screen and (max-width: 990px) {
+  .discover{
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .snake-list .snake-box {
+      padding: 15px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .snake-list {
+      margin: 0 auto;
+  }
+}
+
+/*--------------------------------------------------------------
+  #  5th Page
+--------------------------------------------------------------*/
+
+.container-5 {
+  display: flex;
+  gap: 15px;
+  padding: 90px 120px;
+  background-color: #ffffffdb;
+}
+
+video {
+  max-width: 400px;
+  height: auto;
+}
+
+.title5 {
+  font-weight: normal;
+  font-size: 30px;
+  color: rgb(58, 58, 58);
+  padding-bottom: 10px;
+}
+
+@media (width < 832px) {
+  .container-5 {
+    flex-direction: column-reverse;
+    padding: 2px 20px;
+  }
+}
+
+/*--------------------------------------------------------------
+  #  How CObra's Fight 6th Page
+--------------------------------------------------------------*/
+
+.container-6 {
+  display: flex;
+  gap: 23px;
+  padding: 20px 90px;
+}
+
+.container-6 div>h2 {
+  color: rgb(63, 62, 62);
+  font-weight: normal;
+  font-size: 32px;
+  padding-bottom: 14px;
+}
+
+.container-6 div>p {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.img-6 {
+  max-width: 500px;
+  height: auto;
+}
+
+@media (width < 1100px) {
+  .container-6 {
+    flex-direction: column-reverse;
+    padding: 40px 12px;
+  }
+}
+
+@media (width < 601px) {
+  .container-6 div>h2 {
+    font-size: 28px;
+    padding-bottom: 10px;
+  }
+
+  .container-6 div>p {
+    line-height: 20px;
+  }
+}
+
+/*--------------------------------------------------------------
+  #  CObra's Defence 7th Page
+--------------------------------------------------------------*/
+
+.con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.con > img {
+  max-width: 40%;
+  height: auto;
+  display: block;
+}
+
+.con > img {
+  border: 1px solid black;
+}
+
+.container-7-text {
+  color: rgb(48, 48, 48);
+  padding: 10px;
+}
+
+.container-7-text>h1 {
+  text-align: center;
+  font-weight: 100;
+}
+
+.container-7-text>p {
+  text-align: center;
+  padding: 5px;
+}
+
+/*--------------------------------------------------------------
+  #  8th Page
+--------------------------------------------------------------*/
+
+.container-8 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 100px;
+}
+
+.img-8 {
+  max-width: 600px;
+  height: auto;
+}
+
+.text-8 {
+  color: rgb(77, 77, 77);
+}
+
+.text-8>h2 {
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.text-8>p {
+  font-size: 17px;
+  line-height: 24px;
+}
+
+@media (width < 1032px) {
+  .container-8 {
+    flex-direction: column;
+    padding: 0 15px;
+  }
+  .img-8 {
+    max-width: auto;
+    height: 220px;
+  }
+}
+
+/*--------------------------------------------------------------
+  #  Importance 9th Page
+--------------------------------------------------------------*/
+
+.container-9 {
+  color: rgb(52, 52, 52);
+  padding: 0 85px;
+}
+
+.container-9>h1 {
+  text-align: center;
+  font-weight: normal;
+}
+
+.container-9>h2 {
+  font-weight: normal;
+  padding-top: 17px;
+}
+
+.container-9>p {
+  line-height: 22px;
+  padding-top: 10px;
+}
+
+@media (width < 863){
+  .container-9 {
+    padding: 0 1px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .container-9 {
+    padding: 0 20px;
+    margin-top: 60px;
+  }
+  .container-9>h1 {
+    padding-bottom: 8px;
+  }
+}
+
+/*--------------------------------------------------------------
+  #  End
+--------------------------------------------------------------*/

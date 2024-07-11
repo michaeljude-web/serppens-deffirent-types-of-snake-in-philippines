@@ -1,0 +1,58 @@
+/*--------------------------------------------------------------
+  # About us Page
+--------------------------------------------------------------*/
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.containerr {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: rgb(46, 45, 45);
+}
+
+h1 {
+    font-weight: normal;
+}
+
+.text_container {
+    line-height: 26px;
+}
+
+.img_container,
+.text_container {
+    flex: 1;
+    padding: 10px;
+}
+
+.img_container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.about-text {
+    margin-bottom: 12px;
+}
+@media (width < 991px) {
+    .containerr{
+        position: relative;
+        top: 100px;
+    }
+    }
+@media (max-width: 991px) {
+    .containerr {
+        flex-direction: column-reverse;
+    }
+}

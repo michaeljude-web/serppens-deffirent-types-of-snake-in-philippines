@@ -1,0 +1,93 @@
+/*--------------------------------------------------------------
+  # Snake Rescue
+--------------------------------------------------------------*/
+
+  .team-section {
+    padding-top: 9px;
+  }
+
+  .title {
+    font-weight: normal;
+    font-size: 26px;
+    color: #272626;
+    text-align: center;
+    width: auto;
+    padding: 20px;
+    position: relative;
+    top: 83px;
+  }
+
+  .team-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    max-width: 1250px;
+    margin: 150px auto;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .team-list .team-container {
+    list-style: none;
+    text-decoration: none;
+    transition: border 0.5s ease;
+  }
+
+  .team-list .team-container img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  .team-list span {
+    display: inline-block;
+    background: #F7DFF5;
+    margin-top: 32px;
+    padding: 8px 15px;
+    font-size: 0.75rem;
+    border-radius: 50px;
+    font-weight: 600;
+    width: 100px;
+  }
+
+  .team-container .name {
+    color: #303030;
+    padding-top: 8px;
+    font-size: x-large;
+    font-weight: 540;
+  }
+
+  .location {
+    color: #0549a1;
+    font-size: 16px;
+    position: relative;
+    top: 6px;
+  }
+
+  .team-container .contact {
+    padding-top: 17px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #353434;
+  }
+
+  @media (max-width: 1200px) {
+    .team-list .team-container {
+      padding: 15px;
+    }
+  }
+
+  @media(width <980px){
+    .team-section {
+    padding-top:  30px;
+  }
+  .title {
+    padding-bottom: 90px;
+  }
+  }
+
+  @media screen and (max-width: 980px) {
+    .team-list {
+      margin: 0 auto;
+    }
+  }
