@@ -3,4 +3,4 @@
 * CSS  <br>
 * JAVASCRIPT <br><hr>
 <span>&nbsp;Click Here > </span>
-<a href="https://michaeljude-web.github.io/serppens-different-types-of-snake-in-philippines/"> Demo Live</a>
+<a href="https://michaeljude-web.github.io/serppens-different-types-of-snake-in-philippines/"> Demo Code</a>
